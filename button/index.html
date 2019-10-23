@@ -1,0 +1,91 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+<title>CSS button by Marcus Gybäck</title>
+<style>
+body {
+	font-family: anivers, helvetica, Arial, Helvetica, sans-serif;
+	margin: 0;
+	padding: 0;
+}
+.left {
+	float: left;	
+}
+.right {
+	float: right;	
+}
+.button-section {
+	width: 40%;
+	padding-right: 10%;
+	float: left;
+}
+/*****Buttons*****/
+.button {
+	width: 5.5em;
+	display: block;
+	border: 2px solid #9c9c9c;
+	padding: .48em .8em;
+	font-size: 18px;
+	font-weight: 700;
+	color: #000;
+	cursor: pointer;
+	text-decoration: none;
+	margin-bottom: 20px;
+}
+.button span {
+	vertical-align: middle;
+}
+.icon {
+	width: 26px;
+	height: 26px;
+	-webkit-border-radius: 13px;
+	-moz-border-radius: 13px;
+	-ie-border-radius: 13px;
+	border-radius: 13px;
+	background: #fff;
+	float: right;
+}
+
+.arrow {
+	margin: 7px 0px 0 8px;
+	-webkit-border-style: solid;
+	-moz-border-style: solid;
+	-ie-border-style: solid;
+	border-style: solid;
+	border-width:6px 6px 6px 12px;
+	width: 0;
+	height: 0;
+}
+
+.lightbg-orange {
+	border-style solid;
+	background-color: #f3af5b;
+	color: #000;
+}
+.lightbg-orange .arrow {
+	border-color: transparent transparent transparent #ea624a;
+}
+
+.close:after{
+  margin: 4px 0px 0 8px;
+  display: inline-block;
+  content: "\00d7"; /* This will render the 'X' */
+}
+</style>
+</head>
+
+<body>
+<section id="content" class="clearfix">
+  <section class="button-section">
+  <div class="right">
+    <h1 class="dark-header"></h1>
+	<a href="#" class="button lightbg-orange clearfix"><span>Delete</span>
+    <div class="icon">
+      <div class="close"></div>
+    </div>
+    </a>
+    </div>
+    </section>
+</body>
+</html>
